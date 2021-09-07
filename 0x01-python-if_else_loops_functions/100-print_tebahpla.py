@@ -1,11 +1,7 @@
 #!/usr/bin/python3
-for i in range(122, 96, -1):
-    if i % 2 != 0:
-        print("{:c}".format(i - 32), end='')
+for x in range(ord('z'), ord('a') - 1, -1):
+    if (x % 2 != 0):
+        i = x - ord('a') + ord('A')
     else:
-        print("{:c}".format(i), end='')#!/usr/bin/python3
-for i in range(122, 96, -1):
-    if i % 2 != 0:
-        print("{:c}".format(i - 32), end='')
-    else:
-        print("{:c}".format(i), end='') 
+        i = x
+    print("{:c}".format(i), end="")
