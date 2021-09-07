@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-for i in range(0, 100):
-    if i == 99:
-        print("99")
+for x in range(100):
+    if x != 99:
+        print("{:02d}".format(x), end=", ")
     else:
-        print("{0:0=2d}, ".format(i), end='')#!/usr/bin/python3
-for i in range(0, 100):
-    if i == 99:
-        print("99")
+        print("{:02d}".format(x))#!/usr/bin/python3
+for x in range(100):
+    if x != 99:
+        print("{:02d}".format(x), end=", ")
     else:
-        print("{0:0=2d}, ".format(i), end='') 
+        print("{:02d}".format(x))
