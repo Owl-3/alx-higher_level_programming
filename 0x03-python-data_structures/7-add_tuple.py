@@ -1,20 +1,7 @@
 #!/usr/bin/python3
 def add_tuple(tuple_a=(), tuple_b=()):
-        try:
-                    a1 = tuple_a[0]
-        except IndexError:
-                    a1 = 0
-                        try:
-                                    a2 = tuple_a[1]
-                        except IndexError:
-                                    a2 = 0
-                                        try:
-                                                    b1 = tuple_b[0]
-                                        except IndexError:
-                                                    b1 = 0
-                                                        try:
-                                                                    b2 = tuple_b[1]
-                                                        except IndexError:
-                                                                    b2 = 0
-                                                                        tuple_c = (a1 + b1, a2 + b2)
-                                                                            return (tuple_c)
+            tuple_a += (0, 0)
+                tuple_b += (0, 0)
+                    # adding zero to both indices of the tuple
+                        return tuple_a[0] + tuple_b[0], tuple_a[1] + tuple_b[1]
+                
